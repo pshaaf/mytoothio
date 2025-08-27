@@ -23,6 +23,8 @@ function Router() {
 }
 
 function App() {
+  console.log("App component rendering, env:", process.env.NODE_ENV);
+  
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
